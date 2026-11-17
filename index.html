@@ -41,12 +41,12 @@ h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
 .wrap{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 
 /* header */
-.brandrow{display:flex;align-items:center;gap:10px}
-.plogo{width:30px;height:34px;flex:none}
-.wordmark{font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:-.02em}
+.brandrow{display:flex;align-items:center;justify-content:center;gap:9px;width:100%}
+.plogo{width:28px;height:32px;flex:none;shape-rendering:geometricPrecision}
+.wordmark{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
 .pastday{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--surface);border-radius:14px;padding:10px 14px;font-size:14px}
-.top{background:var(--bg)}
-.top .wrap{padding-block:12px 2px;display:flex;flex-direction:column;gap:2px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .wrap{padding-block:10px;display:flex;flex-direction:column;gap:2px}
 .hrow{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .datenav{display:flex;align-items:center;gap:2px;margin-left:-6px}
 .iconbtn{width:30px;height:30px;border-radius:50%;border:0;background:none;color:var(--muted);display:grid;place-items:center;font-size:22px;line-height:1}
